@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { money, telHref, useApi } from '../api.js';
+import { asset, money, telHref, useApi } from '../api.js';
 import BeforeAfter from '../components/BeforeAfter.jsx';
 
 const steps = [
@@ -39,7 +39,7 @@ export default function Home() {
           )}
         </div>
         <div className="hero__media">
-          <BeforeAfter src="/img/hero-car.jpg" alt="A grey sedan with freshly polished, glossy paint parked by a lake" />
+          <BeforeAfter src={asset('img/hero-car.jpg')} alt="A grey sedan with freshly polished, glossy paint parked by a lake" />
         </div>
       </section>
 

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useApi } from '../api.js';
+import { asset, useApi } from '../api.js';
 
 const habits = [
   { title: 'No automatic brushes', text: 'Brushes and dirty towels are what put swirl marks in paint. Every car is washed by hand with clean mitts.' },
@@ -15,7 +15,7 @@ export default function About() {
   return (
     <>
       <section className="about-hero">
-        <img src="/img/hand-wash.jpg" alt="A detailer hand-washing a black sports car with a foam mitt" />
+        <img src={asset('img/hand-wash.jpg')} alt="A detailer hand-washing a black sports car with a foam mitt" />
       </section>
 
       <div className="section-inner about">

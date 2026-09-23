@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "concurrently -n api,web -c blue,cyan \"npm run dev -w server\" \"npm run dev -w client\"",
     "build": "npm run build -w client",
+    "build:static": "npm run build -w client && npm run export-static -w server",
     "start": "npm run start -w server",
     "db:reset": "npm run db:reset -w server"
   },

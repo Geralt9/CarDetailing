@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { money, useApi } from '../api.js';
+import { asset, money, useApi } from '../api.js';
 import PageIntro from '../components/PageIntro.jsx';
 import Status from '../components/Status.jsx';
 
@@ -17,7 +17,7 @@ export default function Services() {
 
   return (
     <>
-      <PageIntro title="Services" image="/img/rinse.jpg">
+      <PageIntro title="Services" image={asset('img/rinse.jpg')}>
         Every service below can be booked on its own or as part of a package.
       </PageIntro>
 

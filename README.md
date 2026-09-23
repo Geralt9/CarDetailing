@@ -18,6 +18,10 @@ npm run db:reset
 
 For production: `npm run build` then `npm start`. Express serves the built site and the API from port 3001.
 
+### GitHub Pages
+
+Pages can't run the Express server, so `.github/workflows/pages.yml` builds a static copy instead: `npm run build:static` exports each API response to `client/dist/api/*.json` and the site reads those files. It deploys on every push to `main`. One-time setup: in the repo go to **Settings → Pages** and set **Source** to **GitHub Actions**.
+
 ## Adapting it for a client
 
 All business content lives in `server/sql/seed.sql`: name, phone, services, packages and
